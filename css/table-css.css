@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter-Regular.otf"); }
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter-Bold.otf"); }
+
+body {
+  font-family: "Inter-Regular";
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+.title-bold {
+  font-family: "Inter-Bold"; }
+
+table {
+  border: 0;
+  padding: 0;
+  border-spacing: 0; }
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 160px; }
+
+a {
+  color: #007DFF;
+  text-decoration: none; }
+
+.text-blue {
+  color: #1C306D; }
+
+p.mt-40 a {
+  display: inline-block;
+  margin: 0 5px; }
+
+.icon-social {
+  text-align: center; }
+  .icon-social i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px; }
+  .icon-social .ic-fb {
+    background: url("../img/icons/ic-fb.png") no-repeat center/8px; }
+  .icon-social .ic-ytb {
+    background: url("../img/icons/ic-ytb.png") no-repeat center/20px; }
+  .icon-social .ic-vk {
+    background: url("../img/icons/ic-vk.png") no-repeat center/20px; }
+  .icon-social .ic-ins {
+    background: url("../img/icons/ic-ins.png") no-repeat center/17px; }
+  .icon-social .ic-whats {
+    background: url("../img/icons/ic-whats.png") no-repeat center/17px; }
+
+.ic-ios {
+  background: url("../img/icons/ic-ios.png") no-repeat center/12px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.ic-and {
+  background: url("../img/icons/ic-and.png") no-repeat center/12px;
+  width: 16px;
+  height: 16px;
+  margin-left: 30px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.btn-blue2 {
+  height: 40px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #007DFF 0%, #00B9FF 100%);
+  color: #ffffff;
+  border-radius: 3px; }
+
+.min-block-tab {
+  margin-top: -60px !important; }
+
+.mb-25 {
+  margin-bottom: 25px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.text-center {
+  text-align: center; }
+
+.bottom-tb {
+  color: #A9ADB1;
+  margin-top: 30px;
+  text-align: center; }
+  .bottom-tb .right-footer {
+    text-align: center; }
+  .bottom-tb a {
+    color: #A9ADB1; }
+
+.bg-blue-table {
+  min-height: 150px; }
+
+.logo-box-table {
+  align-items: center;
+  display: flex;
+  padding: 20px 30px;
+  justify-content: center; }
+  .logo-box-table .text-logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    padding-left: 10px; }
+
+.bg-blue-table {
+  background: #007DFF;
+  min-height: 150px;
+  text-align: center; }
+
+.table-code {
+  width: 100%; }
+
+.bg-white {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  color: #000;
+  padding: 25px;
+  border-radius: 8px; }
+
+.w-680 {
+  width: 680px;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center; }
+
+.fs-24 {
+  font-size: 24px; }
+
+.text-grey {
+  color: #A9ADB1; }

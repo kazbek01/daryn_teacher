@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daryn.kz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery-nicelabel.css">
+    <link rel="stylesheet" href="css/starrr.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_custom.css">
+    <link rel="icon" href="img/icons/favicon.png">
+</head>
+<body class="bg-blue-dark">
+<header class="header-review">
+    <div class="container">
+        <a href="index.html" class="logo-cover">
+            <img src="img/logo/logo-img.svg" alt="">
+        </a>
+    </div>
+</header>
+<section class="teacher-review">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="review-prof">
+                    <div class="review-prof-img">
+                        <img src="img/main/load-img.svg" alt="">
+                    </div>
+                    <div class="review-prof-caption">
+                        <h3>Бәйдібек Нұрланұлы</h3>
+                        <p><img src="img/icons/Star.svg" alt="">4.9</p>
+                    </div>
+                </div>
+                <div class="review-caption">
+                    <h4>Тақырып</h4>
+                    <p>Жылулық қозғалыс, броундық қозғалыс және диффузия</p>
+                    <h4>Видеокурстың уақыты</h4>
+                    <p>2 минут 48 секунд</p>
+                    <h4>Төлем</h4>
+                    <p>- 248 d.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <form action="#">
+                    <div class="review-form">
+                        <h2>Мұғалімге туралы пікір қалдырыңыз</h2>
+                        <div class="stars"></div>
+                        <div class="serv-type">
+                            <div class="serv-type-item">
+                                <img src="img/icons/serv-flag.svg" alt="">
+                                <p>Тез түсіндіреді</p>
+                                <input type="radio" name="serv-type">
+                            </div>
+                            <div class="serv-type-item">
+                                <img src="img/icons/serv-medal.svg" alt="">
+                                <p>Жақсы біледі</p>
+                                <input type="radio" name="serv-type">
+                            </div>
+                            <div class="serv-type-item">
+                                <img src="img/icons/serv-badge.svg" alt="">
+                                <p>Дарынды</p>
+                                <input type="radio" name="serv-type">
+                            </div>
+                        </div>
+                        <div class="serv-comment">
+                            <h4>Пікір қалдыру</h4>
+                            <textarea name="" placeholder="Пікір қалдыру" class="text-autosize"></textarea>
+                        </div>
+                        <button class="btn-plain btn-blue">Аяқтау</button>
+                    </div>
+
+                    <input type='text' name='rating' value='0' id='star2_input'/>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/lib.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.spincrement.min.js"></script>
+<script src="js/starrr.js"></script>
+<script type="text/javascript">
+    var $s2input = $('#star2_input');
+    $('.stars').starrr({
+        max: 5,
+        rating: $s2input.val(),
+        change: function(e, value){
+            $s2input.val(value).trigger('input');
+        }
+    });
+
+    $('.serv-type-item input[name="serv-type"]').on('click',function () {
+        $('.serv-type-item').removeClass('serv-active');
+        $(this).closest('.serv-type-item').addClass('serv-active');
+    })
+
+    var textarea = document.querySelector('.text-autosize');
+
+    textarea.addEventListener('keydown', autosize);
+
+    function autosize(){
+        var el = this;
+        setTimeout(function(){
+            el.style.cssText = 'height:auto; padding:0';
+            // for box-sizing other than "content-box" use:
+            // el.style.cssText = '-moz-box-sizing:content-box';
+            el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        },0);
+    }
+</script>
+<script src="js/common.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/input.js"></script>
+<script src="js/jquery.nicelabel.js"></script>
+</body>
+</html>
